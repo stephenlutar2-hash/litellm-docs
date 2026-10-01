@@ -79,6 +79,8 @@ model_list:
 
 ## JEV classifier (TypeSafe AI)
 
+For one guide covering hosted Jev and self-hosted Nimble and Laya, including configuration examples and availability, see [Decision model classifiers](/docs/auto_router/decision_classifiers).
+
 `classifier_type: jev` uses TypeSafe System One Choice evaluation to select a tier inside the existing Auto Router. LiteLLM sends the classifier input to `POST /v1/systemone` as `state`, with one `questions.tier` question whose criteria describe the configured tiers. The chosen tier's model serves the completion
 
 ### Set the server key
